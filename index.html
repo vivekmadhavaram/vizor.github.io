@@ -26,7 +26,7 @@
     }
 
     header p {
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: #cbd5e1;
     }
 
@@ -99,26 +99,25 @@
 
 <body>
   <header>
-    <h1>Your Paper Title</h1>
-    <p>Author1, Author2, Author3<br>Conference/Journal Name, Year</p>
+    <h1>VIZOR: Viewpoint-Invariant Zero-Shot Scene Graph Generation for 3D Scene Reasoning</h1>
+    <p><a href="https://vivekmadhavaram.github.io/vivek_page/">Vivek Madhavaram<sup>1</sup>,</a>  Vartika Sengar<sup>2</sup>, Arkadipta De<sup>2</sup>, <a href="https://charusharma.org/">Charu Sharma<sup>1</sup></a><br>WACV 2026</p>
+<p><sup>1</sup>IIIT Hyderabad, India , <sup>2</sup>Fujitsu Research India</p>
   </header>
 
   <section class="teaser">
     <h2>Teaser</h2>
-    <img src="teaser.jpg" alt="Teaser Image">
+    <img src="teaser.png" alt="Teaser Image">
   </section>
 
   <section class="architecture">
     <h2>Architecture</h2>
-    <img src="architecture.png" alt="Architecture Figure">
+    <img src="arch.png" alt="Architecture Figure">
   </section>
 
   <section class="abstract">
     <h2>Abstract</h2>
     <p>
-      Replace this with your abstract text. This section gives a concise summary
-      of your paper’s motivation, methodology, and key results. Try to keep it
-      around 150–200 words.
+      Scene understanding and reasoning has been a fundamental problem in 3D computer vision, requiring models to identify objects, their properties, and spatial or comparative relationships among the objects. Existing approaches enable this by creating scene graphs using multiple inputs such as 2D images, depth maps, object labels, and annotated relationships from specific reference view. However, these methods often struggle with generalization and produce inaccurate spatial relationships like ``left/right", which become inconsistent across different viewpoints. To address these limitations, we propose Viewpoint-Invariant ZerO-shot scene graph generation for 3D scene Reasoning (VIZOR). VIZOR is a training-free, end-to-end framework that constructs dense, viewpoint-invariant 3D scene graphs directly from raw 3D scenes. The generated scene graph is unambiguous, as spatial relationships are defined relative to each object’s front-facing direction, making them consistent regardless of the reference view. Furthermore, it infers open-vocabulary relationships that describe spatial and proximity relationships among scene objects without requiring annotated training data. We conduct extensive quantitative and qualitative evaluations to assess the effectiveness of VIZOR on scene graph generation and downstream tasks, such as query-based object grounding. VIZOR outperforms state-of-the-art methods, showing clear improvements in scene graph generation and achieving 22\% and 4.81\% gains in zero-shot grounding accuracy on the Replica and Nr3D datasets, respectively.
     </p>
   </section>
 
